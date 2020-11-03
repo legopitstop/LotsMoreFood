@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "morefood:item/raw_squid"
+        "layer0": "morefood:item/squid"
     }
 }

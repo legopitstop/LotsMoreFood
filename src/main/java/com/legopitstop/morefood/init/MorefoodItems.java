@@ -55,6 +55,9 @@ public class MorefoodItems {
     // Register items & blocks
     public static DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoreFood.MOD_ID);
 
+    public static final RegistryObject<Item> GLOWBERRIES = ITEMS.register("glowberries",
+            ()-> new BlockItem(MorefoodBlocks.GLOWBERRIES_VINES.get(),
+                    new Item.Properties().group(MoreFood.TAB)));
     // Crop Item
     public static final RegistryObject<Item> BARLEY_SEEDS = ITEMS.register("barley_seeds",
             ()-> new BlockItem(MorefoodBlocks.BARLEY.get(),

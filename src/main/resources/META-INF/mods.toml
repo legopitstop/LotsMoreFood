@@ -1,11 +1,11 @@
 modLoader="javafml"
-loaderVersion="[34,)"
+loaderVersion="[31,34]"
 license="Legopitstop & Sir_Craftypants Common License"
 issueTrackerURL="https://github.com/legopitstop/LotsMoreFood-1.16.1/issues"
 
 [[mods]]
 modId="morefood"
-version="1.0.0-pre1"
+version="1.0.0-pre2"
 displayName="Lot's More Food"
 updateJSONURL="https://github.com/legopitstop/ModUpdates/raw/master/LotsMoreFood/update.json"
 displayURL="https://www.curseforge.com/members/legopitstop/projects"
@@ -19,13 +19,13 @@ description='''
 [[dependencies.morefood]]
     modId="forge"
     mandatory=true
-    versionRange="[34,)"
+    versionRange="[31,34]"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.morefood]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.3]"
+    versionRange="[1.16,1.16.3]"
     ordering="NONE"
     side="BOTH"
