@@ -54,7 +54,7 @@ public class SpoonItem extends ToolItem {
             Blocks.GREEN_CONCRETE_POWDER,
             Blocks.RED_CONCRETE_POWDER,
             Blocks.BLACK_CONCRETE_POWDER,
-            Blocks.field_235336_cN_);
+            Blocks.SOUL_SOIL);
 
     public static final Map<Block, BlockState> SHOVEL_LOOKUP = Maps.newHashMap(ImmutableMap.of(Blocks.GRASS_BLOCK, Blocks.GRASS_PATH.getDefaultState()));
 
@@ -84,7 +84,7 @@ public class SpoonItem extends ToolItem {
                     world.playEvent((PlayerEntity)null, 1009, blockpos, 0);
                 }
 
-                CampfireBlock.func_235475_c_(world, blockpos, blockstate);
+                CampfireBlock.extinguish(world, blockpos, blockstate);
                 blockstate2 = blockstate.with(CampfireBlock.LIT, Boolean.valueOf(false));
             }
 

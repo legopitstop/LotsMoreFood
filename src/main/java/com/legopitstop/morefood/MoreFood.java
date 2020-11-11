@@ -1,12 +1,9 @@
 package com.legopitstop.morefood;
 
-import com.legopitstop.morefood.entities.ExoticTraderEntity;
 import com.legopitstop.morefood.init.*;
-import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -29,18 +26,11 @@ public class MoreFood
         MorefoodSounds.SOUNDS.register(FMLJavaModLoadingContext.get().getModEventBus());
         MorefoodBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         MorefoodItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        MorefoodEntityTypes.ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    // set attrubites to extoic trader
-    private void setup(final FMLCommonSetupEvent event) {
-        DeferredWorkQueue.runLater(()-> {
-            // func_233813_a_ -> create
-            GlobalEntityTypeAttributes.put(MorefoodEntityTypes.EXOTIC_TRADER.get(), ExoticTraderEntity.setCustomAttributes().func_233813_a_());
-        });
-    }
+    private void setup(final FMLCommonSetupEvent event) { }
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
 

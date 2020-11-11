@@ -40,7 +40,7 @@ public class Beer extends Pufferfish {
     // desc lines at bottom
     @OnlyIn(Dist.CLIENT)
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-        tooltip.add(this.func_219981_d_().func_240699_a_(TextFormatting.GRAY));
+        tooltip.add(this.func_219981_d_().mergeStyle(TextFormatting.GRAY));
     }
 
     @OnlyIn(Dist.CLIENT)

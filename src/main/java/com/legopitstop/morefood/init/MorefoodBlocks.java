@@ -4,8 +4,6 @@ import com.legopitstop.morefood.MoreFood;
 import com.legopitstop.morefood.blocks.*;
 import com.legopitstop.morefood.blocks.bush.*;
 import com.legopitstop.morefood.blocks.crop.*;
-import com.legopitstop.morefood.blocks.vines.GlowberriesVinesBlock;
-import com.legopitstop.morefood.blocks.vines.GlowberriesVinesTopBlock;
 import net.minecraft.block.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,12 +13,6 @@ public class MorefoodBlocks {
 
     // Register items & blocks
     public static DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MoreFood.MOD_ID);
-
-    public static final RegistryObject<Block> GLOWBERRIES_VINES = BLOCKS.register("glowberries_vines",
-            ()-> new GlowberriesVinesBlock(Block.Properties.from(Blocks.field_235384_mx_)));
-
-    public static final RegistryObject<Block> GLOWBERRIES_VINES_PLANT = BLOCKS.register("glowberries_vines_plant",
-            ()-> new GlowberriesVinesTopBlock(Block.Properties.from(Blocks.field_235385_my_)));
 
     // Crops
     public static final RegistryObject<Block> BARLEY = BLOCKS.register("barley",
