@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "experience": 3.15,
+  "cookingtime": 900,
+  "ingredient": {
+    "item": "morefood:raw_squid_block"
+  },
+  "result": "morefood:cooked_squid_block"
+}

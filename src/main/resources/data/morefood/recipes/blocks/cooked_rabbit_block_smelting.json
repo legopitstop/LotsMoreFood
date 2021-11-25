@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 3.15,
+  "cookingtime": 1800,
+  "ingredient": {
+    "item": "morefood:raw_rabbit_block"
+  },
+  "result": "morefood:cooked_rabbit_block"
+}

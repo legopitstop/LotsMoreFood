@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "morefood:item/hamburger_patty"
+        "layer0": "morefood:item/cooked_hamburger_patty"
     }
 }

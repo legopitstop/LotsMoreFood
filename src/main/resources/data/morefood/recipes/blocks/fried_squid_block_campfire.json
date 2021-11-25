@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 5400,
+  "ingredient": {
+    "item": "morefood:raw_squid_block"
+  },
+  "result": "morefood:cooked_squid_block"
+}
